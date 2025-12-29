@@ -37,7 +37,7 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
             className="group px-8 py-4 text-base font-bold text-white bg-emerald-500 rounded-full hover:bg-emerald-700 transition-all shadow-lg shadow-emerald-900/20 w-full sm:w-auto flex items-center justify-center gap-2 cursor-pointer"
-            href="#"
+            href="#destinations"
           >
             Mulai Jelajah
             <LuArrowRight className="group-hover:translate-x-1 transition-transform" />
