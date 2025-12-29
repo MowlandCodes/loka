@@ -3,7 +3,10 @@ import { LuMapPin, LuArrowRight } from "react-icons/lu";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+    <section
+      id="home"
+      className="relative h-screen w-full flex items-center justify-center overflow-hidden"
+    >
       <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat transform scale-105 animate-slow-zoom"
         style={{ backgroundImage: `url(${HeroImage})` }}
@@ -33,7 +36,7 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
-            className="group px-8 py-4 text-base font-bold text-white bg-emerald-600 rounded-full hover:bg-emerald-700 transition-all shadow-lg shadow-emerald-900/20 w-full sm:w-auto flex items-center justify-center gap-2 cursor-pointer"
+            className="group px-8 py-4 text-base font-bold text-white bg-emerald-500 rounded-full hover:bg-emerald-700 transition-all shadow-lg shadow-emerald-900/20 w-full sm:w-auto flex items-center justify-center gap-2 cursor-pointer"
             href="#"
           >
             Mulai Jelajah
