@@ -57,6 +57,7 @@ export default function Navbar() {
         </button>
       </div>
 
+      {/* Mobile Navbar */}
       <div
         className={`md:hidden absolute top-full left-0 w-full bg-slate-900/95 backdrop-blur-xl border-b border-white/10 shadow-2xl transition-all duration-300 ease-in-out transform origin-top ${isMobileOpen
             ? "opacity-100 translate-y-0 pointer-events-auto"
