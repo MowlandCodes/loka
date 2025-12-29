@@ -64,7 +64,7 @@ export default function Destinations() {
         {destinationsData.map((item) => (
           <div
             key={item.id}
-            className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100"
+            className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 cursor-pointer"
           >
             {/* Image Container */}
             <div className="relative h-64 overflow-hidden">
@@ -104,7 +104,7 @@ export default function Destinations() {
                   </p>
                 </div>
 
-                <button className="p-3 bg-slate-50 text-slate-900 rounded-full hover:bg-emerald-600 hover:text-white transition-all shadow-sm">
+                <button className="p-3 bg-slate-50 text-slate-900 rounded-full hover:bg-emerald-600 hover:text-white transition-all shadow-sm cursor-pointer">
                   <LuArrowRight />
                 </button>
               </div>
