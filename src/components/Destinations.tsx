@@ -1,3 +1,6 @@
+import NusaPenida from "@/assets/images/nusa-penida.webp";
+import GunungBromo from "@/assets/images/gunung-bromo.webp";
+import RajaAmpat from "@/assets/images/raja-ampat.webp";
 import { LuMapPin, LuStar, LuArrowRight } from "react-icons/lu";
 
 interface Destination {
@@ -17,8 +20,7 @@ const destinationsData: Destination[] = [
     location: "Bali, Indonesia",
     price: "IDR 750K",
     rating: 4.8,
-    image:
-      "https://images.unsplash.com/photo-1598324789736-4861f89564a0?q=80&w=1974&auto=format&fit=crop",
+    image: NusaPenida,
     category: "Island",
   },
   {
@@ -27,8 +29,7 @@ const destinationsData: Destination[] = [
     location: "East Java, Indonesia",
     price: "IDR 500K",
     rating: 4.9,
-    image:
-      "https://images.unsplash.com/photo-1605553589412-257a07706d87?q=80&w=2070&auto=format&fit=crop",
+    image: GunungBromo,
     category: "Mountain",
   },
   {
@@ -37,8 +38,7 @@ const destinationsData: Destination[] = [
     location: "Papua, Indonesia",
     price: "IDR 3.5M",
     rating: 5.0,
-    image:
-      "https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?q=80&w=2070&auto=format&fit=crop",
+    image: RajaAmpat,
     category: "Diving",
   },
 ];
@@ -111,12 +111,6 @@ export default function Destinations() {
             </div>
           </div>
         ))}
-      </div>
-
-      <div className="mt-12 text-center">
-        <button className="px-8 py-3 border-2 border-slate-200 text-slate-700 font-bold rounded-full hover:border-emerald-600 hover:text-emerald-600 transition-all">
-          View All Destinations
-        </button>
       </div>
     </section>
   );
