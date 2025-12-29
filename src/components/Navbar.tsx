@@ -11,9 +11,10 @@ export default function Navbar() {
   const [isMobileOpen, setIsMobileOpen] = useState<boolean>(false);
 
   const navLinks: NavItem[] = [
-    { label: "Destinations", href: "#" },
-    { label: "Cottages", href: "#" },
-    { label: "Gallery", href: "#" },
+    { label: "Home", href: "#home" },
+    { label: "Destinations", href: "#destinations" },
+    { label: "Cottages", href: "#cottages" },
+    { label: "Gallery", href: "#gallery" },
   ];
 
   return (
