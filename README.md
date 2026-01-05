@@ -1,73 +1,92 @@
-# React + TypeScript + Vite
+# LOKA - Platform Promosi Wisata Lokal Indonesia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 1. Deskripsi Proyek
 
-Currently, two official plugins are available:
+**LOKA** adalah sebuah aplikasi web _front-end_ statis (_view-only_) yang dirancang sebagai tugas akhir mata kuliah **Interaksi Manusia dan Komputer (IMK)**. Aplikasi ini berfungsi sebagai _Landing Page_ modern untuk mempromosikan destinasi wisata alam tersembunyi (_hidden gems_) di Indonesia.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Dibangun menggunakan teknologi web modern (**React, TypeScript, Vite, dan Tailwind CSS v4**), LOKA menawarkan antarmuka yang responsif, estetis, dan performa tinggi. Proyek ini berfokus pada implementasi desain antarmuka pengguna (UI) dan pengalaman pengguna (UX) tanpa melibatkan pemrosesan _backend_ yang kompleks.
 
-## React Compiler
+## 2. Topik dan Tujuan
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Topik:** Website Informasi Wisata Lokal (_Travel & Nature_).
+- **Tujuan Utama:**
+  1. Menyediakan informasi visual mengenai destinasi wisata, penginapan (_cottages_), dan galeri keindahan alam Indonesia.
+  2. Mengimplementasikan prinsip-prinsip desain antarmuka yang ramah pengguna (_user-friendly_) dan aksesibel.
+  3. Mendukung audiens global melalui fitur multi-bahasa (Internasionalisasi).
 
-## Expanding the ESLint configuration
+## 3. Target Pengguna
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Aplikasi ini dirancang untuk dua segmen pengguna utama:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. **Wisatawan Domestik (Lokal):** Pengguna yang mencari referensi liburan akhir pekan atau "healing" di dalam negeri dengan akses informasi berbahasa Indonesia.
+2. **Turis Mancanegara (Internasional):** Pengunjung asing yang ingin mengeksplorasi keindahan alam Indonesia, didukung dengan antarmuka berbahasa Inggris.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 4. Prinsip HCI (Human-Computer Interaction) yang Diterapkan
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Dalam pengembangan LOKA, diterapkan prinsip-prinsip _Nielsen’s Usability Heuristics_ dan kaidah UX sebagai berikut:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Aesthetic and Minimalist Design (Desain Estetis dan Minimalis):**
+  Menggunakan _whitespace_ yang cukup, tipografi yang jelas (_Inter font_), dan skema warna alam (_Emerald & Slate_) untuk mengurangi beban kognitif pengguna dan menonjolkan konten visual.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Match Between System and the Real World (Kesesuaian Sistem dengan Dunia Nyata):**
+  Penggunaan ikon yang familiar (misal: Pin Map untuk lokasi) dan istilah yang umum dimengerti. Fitur **Internasionalisasi (i18n)** memungkinkan pengguna beralih antara Bahasa Indonesia dan Inggris sesuai preferensi bahasa mereka.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Consistency and Standards (Konsistensi dan Standar):**
+  Elemen navigasi, tombol _Call-to-Action_ (CTA), dan gaya kartu (_card style_) dijaga konsistensinya di seluruh halaman untuk memudahkan pengguna mengenali pola interaksi.
+
+- **Visibility of System Status (Visibilitas Status Sistem):**
+  Memberikan umpan balik visual (_visual feedback_) saat pengguna melakukan interaksi, seperti efek _hover_ pada kartu destinasi, animasi transisi pada menu, dan perubahan gaya kursor pada elemen yang dapat diklik.
+
+- **User Control and Freedom (Kontrol dan Kebebasan Pengguna):**
+  Navigasi yang bersifat _sticky_ memungkinkan pengguna berpindah antar bagian (_section_) dengan mudah kapan saja tanpa harus menggulir halaman secara manual ke atas.
+
+## 5. Teknologi yang Digunakan
+
+- **Framework:** React (v19)
+- **Bahasa:** TypeScript
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS v4
+- **Runtime:** Bun
+- **Library Tambahan:**
+  - `react-i18next` (Untuk fitur multi-bahasa)
+  - `lucide-react` (Ikonografi)
+
+## 6. Cara Menjalankan Demo
+
+Berikut adalah langkah-langkah untuk menjalankan proyek ini di lingkungan lokal (_localhost_):
+
+### Prasyarat
+
+Pastikan komputer Anda telah terinstal **Bun** (atau Node.js).
+
+### Langkah Instalasi
+
+1. **Clone Repositori** (atau ekstrak file proyek):
+
+   ```bash
+   git clone https://github.com/mowlandcodes/loka.git
+   cd loka
+   ```
+
+2. **Instalasi Dependensi:**
+   Jalankan perintah berikut di terminal untuk mengunduh pustaka yang dibutuhkan:
+
+   ```bash
+   bun install
+   # Atau jika menggunakan npm: npm install
+   ```
+
+3. **Menjalankan Mode Pengembangan:**
+   Untuk melihat demo aplikasi:
+
+   ```bash
+   bun run dev
+   # Atau jika menggunakan npm: npm run dev
+   ```
+
+4. **Akses Browser:**
+   Buka browser dan kunjungi alamat yang tertera di terminal (biasanya `http://localhost:5173`).
+
+---
+
+_Dibuat oleh [M. Faridh Maulana/452024611065, Suryatama Widyadhana/452024611061, Muhammad Wildan/452024611014] - Program Studi Teknik Informatika, Universitas Darussalam Gontor._
