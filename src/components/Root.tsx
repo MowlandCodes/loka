@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Destinations from "@/components/Destinations";
 import Cottages from "@/components/Cottages";
-import Gallery from "./Gallery";
+import Gallery from "@/components/Gallery";
 
 export default function Root() {
   return (
