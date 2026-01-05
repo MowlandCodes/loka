@@ -23,15 +23,16 @@ export default function Hero() {
         </div>
 
         <h1 className="text-5xl md:text-7xl font-black text-white tracking-tight mb-6 leading-tight drop-shadow-xl">
-          Kembali ke Alam, <br />
+          Return to Nature,
+          <br />
           <span className="text-transparent bg-clip-text bg-linear-to-tr from-emerald-600 to-teal-200">
-            Temukan Ketenangan.
+            and Find Peace.
           </span>
         </h1>
 
         <p className="text-lg md:text-xl text-slate-100 mb-10 max-w-2xl mx-auto font-medium drop-shadow-md opacity-90">
-          Nikmati suasana pedesaan yang asri, udara sejuk, dan kearifan lokal
-          yang autentik. Healing terbaik tanpa perlu visa.
+          Enjoy the beautiful countryside, cool air, and authentic local wisdom.
+          The best healing experience without a visa.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -39,7 +40,7 @@ export default function Hero() {
             className="group px-8 py-4 text-base font-bold text-white bg-emerald-500 rounded-full hover:bg-emerald-700 transition-all shadow-lg shadow-emerald-900/20 w-full sm:w-auto flex items-center justify-center gap-2 cursor-pointer"
             href="#destinations"
           >
-            Mulai Jelajah
+            See Destinations
             <LuArrowRight className="group-hover:translate-x-1 transition-transform" />
           </a>
         </div>

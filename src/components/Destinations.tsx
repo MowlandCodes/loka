@@ -51,11 +51,12 @@ export default function Destinations() {
           Top Destinations
         </span>
         <h2 className="text-4xl md:text-5xl font-black text-slate-900 mt-4 mb-4 tracking-tight">
-          Jelajahi <span className="text-emerald-600">Favorit</span> Wisatawan
+          Tourist's <span className="text-emerald-600">Favorite</span>{" "}
+          Destinations
         </h2>
         <p className="text-slate-600 max-w-2xl mx-auto text-lg">
-          Destinasi pilihan dengan rating tertinggi. Sudah terverifikasi aman,
-          nyaman, dan pastinya Instagramable.
+          A top-rated destination. Verified as safe, comfortable, and definitely
+          Instagrammable.
         </p>
       </div>
 
