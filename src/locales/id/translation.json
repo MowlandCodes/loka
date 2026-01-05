@@ -16,7 +16,7 @@
   "cottages": {
     "heading_start": "Menginap dengan",
     "heading_highlight": "Nyaman",
-    "subtitle": "Istirahat sejenak dari kesibukanmu. Pilih tempat perlindungan untuk mendinginkan CPU otak dan mengisi ulang baterai biologismu.",
+    "subtitle": "Istirahat sejenak dari kesibukanmu. Pilih tempat perlindungan untuk mendinginkan pikiran dan mengisi ulang baterai biologismu.",
     "ui": {
       "most_picked": "Paling Laris",
       "available": "Tersedia",
@@ -66,7 +66,7 @@
   "gallery": {
     "heading_start": "Momen",
     "heading_highlight": "Terindah",
-    "subtitle": "Tanpa filter. Hanya alam murni yang dirender dengan FPS tak terbatas. Lihat apa yang dialami para pelancong kami.",
+    "subtitle": "Tanpa filter. Hanya alam murni yang menawarkan keindahan tak terbata. Lihat apa yang dialami para pelancong kami.",
     "cta_question": "Ingin melihat lebih banyak?",
     "cta_button": "Ikuti kami di Instagram",
     "items": {
