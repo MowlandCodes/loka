@@ -1,0 +1,81 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "destinations": "Destinasi",
+    "cottages": "Penginapan",
+    "gallery": "Galeri"
+  },
+  "hero": {
+    "badge": "Desa Wisata, Indonesia",
+    "title_start": "Kembali ke Alam",
+    "title_highlight": "Temukan Ketenangan.",
+    "subtitle": "Nikmati pedesaan yang asri, udara sejuk, dan kearifan lokal yang otentik. Healing terbaik tanpa perlu visa dan paspor.",
+    "cta": "Lihat Destinasi",
+    "scroll_down": "Gulir ke Bawah"
+  },
+  "cottages": {
+    "heading_start": "Menginap dengan",
+    "heading_highlight": "Nyaman",
+    "subtitle": "Istirahat sejenak dari kesibukanmu. Pilih tempat perlindungan untuk mendinginkan CPU otak dan mengisi ulang baterai biologismu.",
+    "ui": {
+      "most_picked": "Paling Laris",
+      "available": "Tersedia",
+      "start_from": "Mulai dari",
+      "book_now": "Pesan Sekarang"
+    },
+    "items": {
+      "bamboo": {
+        "desc": "Villa bambu ramah lingkungan dengan pemandangan lembah 180 derajat. Sempurna untuk detoks digital tanpa gangguan sinyal jelek."
+      },
+      "lakeview": {
+        "desc": "Rasakan kemewahan camping tepat di pinggir danau. Dengarkan suara jangkrik tanpa takut digigit nyamuk. Fasilitas bintang 5 dengan vibes yang tiada dua."
+      },
+      "bromo": {
+        "desc": "Villa Paiton Bromo, berlokasi di Probolinggo, Jawa Timur. Memiliki teras, parkir pribadi gratis, dan WiFi ngebut. Basecamp terbaik buat ngejar sunrise."
+      }
+    },
+    "features": {
+      "wifi": "WiFi Kenceng",
+      "breakfast": "Sarapan Gratis",
+      "breeze": "Angin Alam",
+      "bonfire": "Api Unggun",
+      "bbq": "Area BBQ",
+      "bath": "Kamar Mandi Pribadi",
+      "mountain": "View Gunung",
+      "kingbed": "Kasur King Size"
+    }
+  },
+  "destinations": {
+    "badge": "Destinasi Unggulan",
+    "heading_start": "Destinasi",
+    "heading_highlight": "Favorit",
+    "heading_end": "Wisatawan",
+    "subtitle": "Destinasi dengan rating tertinggi. Terverifikasi aman, nyaman, dan pastinya Instagramable.",
+    "categories": {
+      "island": "Pulau",
+      "mountain": "Pegunungan",
+      "diving": "Menyelam"
+    },
+    "locations": {
+      "east_java": "Jawa Timur, Indonesia"
+    },
+    "ui": {
+      "start_from": "Mulai dari"
+    }
+  },
+  "gallery": {
+    "heading_start": "Momen",
+    "heading_highlight": "Terindah",
+    "subtitle": "Tanpa filter. Hanya alam murni yang dirender dengan FPS tak terbatas. Lihat apa yang dialami para pelancong kami.",
+    "cta_question": "Ingin melihat lebih banyak?",
+    "cta_button": "Ikuti kami di Instagram",
+    "items": {
+      "tumpak": { "caption": "Mengejar Air Terjun" },
+      "bali": { "caption": "Terapi Hijau" },
+      "ulundanu": { "caption": "Gerbang Surga" },
+      "bajo": { "caption": "Vibes Prasejarah" },
+      "bromo": { "caption": "Kejayaan Pagi" },
+      "gili": { "caption": "Jam Emas" }
+    }
+  }
+}

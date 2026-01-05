@@ -1,7 +1,10 @@
 import HeroImage from "@/assets/images/hero_image.webp";
 import { LuMapPin, LuArrowRight } from "react-icons/lu";
+import { useTranslation } from "react-i18next";
 
 export default function Hero() {
+  const { t } = useTranslation();
+
   return (
     <section
       id="home"
@@ -19,20 +22,19 @@ export default function Hero() {
       <div className="relative z-20 text-center px-4 max-w-5xl mx-auto mt-16">
         <div className="inline-flex items-center gap-2 py-2 px-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white text-sm font-medium mb-8 shadow-2xl hover:bg-white/20 transition-all cursor-default">
           <LuMapPin className="text-emerald-400 drop-shadow-md" />
-          <span className="tracking-wide">Desa Wisata, Indonesia</span>
+          <span className="tracking-wide">{t("hero.badge")}</span>
         </div>
 
         <h1 className="text-5xl md:text-7xl font-black text-white tracking-tight mb-6 leading-tight drop-shadow-xl">
-          Return to Nature,
+          {t("hero.title_start")},
           <br />
           <span className="text-transparent bg-clip-text bg-linear-to-tr from-emerald-600 to-teal-200">
-            and Find Peace.
+            {t("hero.title_highlight")}
           </span>
         </h1>
 
         <p className="text-lg md:text-xl text-slate-100 mb-10 max-w-2xl mx-auto font-medium drop-shadow-md opacity-90">
-          Enjoy the beautiful countryside, cool air, and authentic local wisdom.
-          The best healing experience without a visa.
+          {t("hero.subtitle")}
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -40,16 +42,15 @@ export default function Hero() {
             className="group px-8 py-4 text-base font-bold text-white bg-emerald-500 rounded-full hover:bg-emerald-700 transition-all shadow-lg shadow-emerald-900/20 w-full sm:w-auto flex items-center justify-center gap-2 cursor-pointer"
             href="#destinations"
           >
-            See Destinations
+            {t("hero.cta")}
             <LuArrowRight className="group-hover:translate-x-1 transition-transform" />
           </a>
         </div>
       </div>
 
-      {/* Scroll Indicator */}
       <div className="absolute bottom-10 z-20 animate-bounce">
         <span className="text-white/70 text-sm font-medium tracking-widest uppercase">
-          Scroll Down
+          {t("hero.scroll_down")}
         </span>
       </div>
     </section>

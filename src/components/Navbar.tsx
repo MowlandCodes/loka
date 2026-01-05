@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { LuTreePalm } from "react-icons/lu";
 import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
 
@@ -10,11 +11,18 @@ interface NavItem {
 export default function Navbar() {
   const [isMobileOpen, setIsMobileOpen] = useState<boolean>(false);
 
+  const { t, i18n } = useTranslation();
+
+  const toggleLanguage = () => {
+    const newLang = i18n.language === "en" ? "id" : "en";
+    i18n.changeLanguage(newLang);
+  };
+
   const navLinks: NavItem[] = [
-    { label: "Home", href: "#home" },
-    { label: "Destinations", href: "#destinations" },
-    { label: "Cottages", href: "#cottages" },
-    { label: "Gallery", href: "#gallery" },
+    { label: t("nav.home"), href: "#home" },
+    { label: t("nav.destinations"), href: "#destinations" },
+    { label: t("nav.cottages"), href: "#cottages" },
+    { label: t("nav.gallery"), href: "#gallery" },
   ];
 
   return (
@@ -42,6 +50,14 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
+
+          {/* i18n */}
+          <button
+            onClick={toggleLanguage}
+            className="flex items-center gap-2 py-1 px-3 border border-white/20 rounded-full text-xs font-bold text-white hover:border-emerald-500 hover:text-emerald-400 transition-all uppercase"
+          >
+            <span>{i18n.language === "en" ? "EN" : "ID"}</span>
+          </button>
         </div>
 
         {/* Mobile Hamburger Button */}
@@ -60,18 +76,20 @@ export default function Navbar() {
 
       {/* Mobile Navbar */}
       <div
-        className={`md:hidden absolute top-full left-0 w-full bg-slate-900/95 backdrop-blur-xl border-b border-white/10 shadow-2xl transition-all duration-300 ease-in-out transform origin-top ${isMobileOpen
+        className={`md:hidden absolute top-full left-0 w-full bg-slate-900/95 backdrop-blur-xl border-b border-white/10 shadow-2xl transition-all duration-300 ease-in-out transform origin-top ${
+          isMobileOpen
             ? "opacity-100 translate-y-0 pointer-events-auto"
             : "opacity-0 -translate-y-4 pointer-events-none"
-          }`}
+        }`}
       >
         <ul className="flex flex-col font-medium p-4 space-y-2">
           {navLinks.map((link, index) => (
             <li key={index}>
               <a
                 href={link.href}
-                className={`block p-4 rounded-lg transition-all ${index % 2 === 0 ? "bg-white/5" : "bg-transparent"
-                  } hover:bg-emerald-500/20 hover:text-emerald-400 text-slate-100 hover:pl-6`}
+                className={`block p-4 rounded-lg transition-all ${
+                  index % 2 === 0 ? "bg-white/5" : "bg-transparent"
+                } hover:bg-emerald-500/20 hover:text-emerald-400 text-slate-100 hover:pl-6`}
               >
                 {link.label}
               </a>

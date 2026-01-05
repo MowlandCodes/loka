@@ -2,6 +2,7 @@ import NusaPenida from "@/assets/images/nusa-penida.webp";
 import GunungBromo from "@/assets/images/gunung-bromo.webp";
 import RajaAmpat from "@/assets/images/raja-ampat.webp";
 import { LuMapPin, LuStar, LuArrowRight } from "react-icons/lu";
+import { useTranslation } from "react-i18next";
 
 interface Destination {
   id: number;
@@ -13,50 +14,54 @@ interface Destination {
   category: string;
 }
 
-const destinationsData: Destination[] = [
-  {
-    id: 1,
-    title: "Nusa Penida Island",
-    location: "Bali, Indonesia",
-    price: "IDR 750K",
-    rating: 4.8,
-    image: NusaPenida,
-    category: "Island",
-  },
-  {
-    id: 2,
-    title: "Gunung Bromo",
-    location: "East Java, Indonesia",
-    price: "IDR 500K",
-    rating: 4.9,
-    image: GunungBromo,
-    category: "Mountain",
-  },
-  {
-    id: 3,
-    title: "Raja Ampat",
-    location: "Papua, Indonesia",
-    price: "IDR 3.5M",
-    rating: 5.0,
-    image: RajaAmpat,
-    category: "Diving",
-  },
-];
-
 export default function Destinations() {
+  const { t } = useTranslation();
+
+  const destinationsData: Destination[] = [
+    {
+      id: 1,
+      title: "Nusa Penida Island",
+      location: "Bali, Indonesia",
+      price: "IDR 750K",
+      rating: 4.8,
+      image: NusaPenida,
+      category: t("destinations.categories.island"),
+    },
+    {
+      id: 2,
+      title: "Gunung Bromo",
+      location: t("destinations.locations.east_java"),
+      price: "IDR 500K",
+      rating: 4.9,
+      image: GunungBromo,
+      category: t("destinations.categories.mountain"),
+    },
+    {
+      id: 3,
+      title: "Raja Ampat",
+      location: "Papua, Indonesia",
+      price: "IDR 3.5M",
+      rating: 5.0,
+      image: RajaAmpat,
+      category: t("destinations.categories.diving"),
+    },
+  ];
+
   return (
     <section id="destinations" className="py-20 px-4 max-w-7xl mx-auto">
       <div className="text-center mb-16">
         <span className="text-emerald-600 font-bold tracking-wider uppercase text-sm bg-emerald-100 px-3 py-1 rounded-full">
-          Top Destinations
+          {t("destinations.badge")}
         </span>
         <h2 className="text-4xl md:text-5xl font-black text-slate-900 mt-4 mb-4 tracking-tight">
-          Tourist's <span className="text-emerald-600">Favorite</span>{" "}
-          Destinations
+          {t("destinations.heading_start")}{" "}
+          <span className="text-emerald-600">
+            {t("destinations.heading_highlight")}
+          </span>{" "}
+          {t("destinations.heading_end")}
         </h2>
         <p className="text-slate-600 max-w-2xl mx-auto text-lg">
-          A top-rated destination. Verified as safe, comfortable, and definitely
-          Instagrammable.
+          {t("destinations.subtitle")}
         </p>
       </div>
 
@@ -67,7 +72,6 @@ export default function Destinations() {
             key={item.id}
             className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 cursor-pointer"
           >
-            {/* Image Container */}
             <div className="relative h-64 overflow-hidden">
               <img
                 src={item.image}
@@ -83,7 +87,6 @@ export default function Destinations() {
               </div>
             </div>
 
-            {/* Card Content */}
             <div className="p-6">
               <div className="flex items-start justify-between mb-2">
                 <div>
@@ -99,7 +102,9 @@ export default function Destinations() {
 
               <div className="mt-6 flex items-center justify-between border-t border-slate-100 pt-4">
                 <div>
-                  <p className="text-slate-400 text-xs">Start from</p>
+                  <p className="text-slate-400 text-xs">
+                    {t("destinations.ui.start_from")}
+                  </p>
                   <p className="text-emerald-600 font-bold text-lg">
                     {item.price}
                   </p>

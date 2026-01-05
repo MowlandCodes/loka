@@ -1,0 +1,81 @@
+{
+  "nav": {
+    "home": "Home",
+    "destinations": "Destinations",
+    "cottages": "Cottages",
+    "gallery": "Gallery"
+  },
+  "hero": {
+    "badge": "Tourism Village, Indonesia",
+    "title_start": "Return to Nature",
+    "title_highlight": "and Find Peace.",
+    "subtitle": "Enjoy the beautiful countryside, cool air, and authentic local wisdom. The best healing experience without a visa.",
+    "cta": "See Destinations",
+    "scroll_down": "Scroll Down"
+  },
+  "cottages": {
+    "heading_start": "Stay in",
+    "heading_highlight": "Comfort",
+    "subtitle": "Take a break from your hustle. Choose a sanctuary to cool down your mind and recharge your biological battery.",
+    "ui": {
+      "most_picked": "Most Picked",
+      "available": "Available",
+      "start_from": "Start from",
+      "book_now": "Book Now"
+    },
+    "items": {
+      "bamboo": {
+        "desc": "An eco-friendly bamboo villa offering 180-degree valley views. Perfect for a digital detox."
+      },
+      "lakeview": {
+        "desc": "Experience luxury camping right by the lake. Listen to the crickets without the fear of mosquito bites. 5-star facilities with immaculate vibes."
+      },
+      "bromo": {
+        "desc": "Villa Paiton Bromo, located in Probolinggo in the East Java region. Features a terrace, free private parking and free WiFi. The perfect base for your sunrise hunt."
+      }
+    },
+    "features": {
+      "wifi": "High-Speed WiFi",
+      "breakfast": "Free Breakfast",
+      "breeze": "Natural Breeze",
+      "bonfire": "Bonfire",
+      "bbq": "BBQ Area",
+      "bath": "Private Bath",
+      "mountain": "Mountain View",
+      "kingbed": "King Bed"
+    }
+  },
+  "destinations": {
+    "badge": "Top Destinations",
+    "heading_start": "Tourist's",
+    "heading_highlight": "Favorite",
+    "heading_end": "Destinations",
+    "subtitle": "A top-rated destination. Verified as safe, comfortable, and definitely Instagrammable.",
+    "categories": {
+      "island": "Island",
+      "mountain": "Mountain",
+      "diving": "Diving"
+    },
+    "locations": {
+      "east_java": "East Java, Indonesia"
+    },
+    "ui": {
+      "start_from": "Start from"
+    }
+  },
+  "gallery": {
+    "heading_start": "Captured",
+    "heading_highlight": "Moments",
+    "subtitle": "No filters needed. Just pure, unadulterated nature rendering at infinite FPS. See what our travelers are experiencing.",
+    "cta_question": "Want to see more?",
+    "cta_button": "Follow us on Instagram",
+    "items": {
+      "tumpak": { "caption": "Chasing Waterfalls" },
+      "bali": { "caption": "Green Therapy" },
+      "ulundanu": { "caption": "Gateway to Heaven" },
+      "bajo": { "caption": "Prehistoric Vibes" },
+      "bromo": { "caption": "Morning Glory" },
+      "gili": { "caption": "Golden Hour" }
+    }
+  }
+}

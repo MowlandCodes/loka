@@ -1,4 +1,5 @@
 import { LuInstagram, LuCamera } from "react-icons/lu";
+import { useTranslation } from "react-i18next";
 import TumpakSewu from "@/assets/images/tumpak-sewu.webp";
 import MtBromo from "@/assets/images/mt-bromo.webp";
 import LabuanBajo from "@/assets/images/labuan-bajo.webp";
@@ -12,52 +13,54 @@ interface GalleryItem {
   location: string;
 }
 
-const galleryData: GalleryItem[] = [
-  {
-    id: 1,
-    src: TumpakSewu,
-    alt: "Waterfall",
-    caption: "Chasing Waterfalls",
-    location: "Tumpak Sewu",
-  },
-  {
-    id: 2,
-    src: "https://images.unsplash.com/photo-1512100356356-de1b84283e18?q=80&w=1975&auto=format&fit=crop",
-    alt: "Bali Rice Terrace",
-    caption: "Green Therapy",
-    location: "Ubud, Bali",
-  },
-  {
-    id: 3,
-    src: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=1938&auto=format&fit=crop",
-    alt: "Pura Ulundanu",
-    caption: "Gateway to Heaven",
-    location: "Pura Ulundanu",
-  },
-  {
-    id: 4,
-    src: LabuanBajo,
-    alt: "Komodo Island",
-    caption: "Prehistoric Vibes",
-    location: "Labuan Bajo",
-  },
-  {
-    id: 5,
-    src: MtBromo,
-    alt: "Bromo Sunrise",
-    caption: "Morning Glory",
-    location: "Mt. Bromo",
-  },
-  {
-    id: 6,
-    src: GiliTrawangan,
-    alt: "Beach Sunset",
-    caption: "Golden Hour",
-    location: "Gili Trawangan",
-  },
-];
-
 export default function Gallery() {
+  const { t } = useTranslation();
+
+  const galleryData: GalleryItem[] = [
+    {
+      id: 1,
+      src: TumpakSewu,
+      alt: "Waterfall",
+      caption: t("gallery.items.tumpak.caption"),
+      location: "Tumpak Sewu",
+    },
+    {
+      id: 2,
+      src: "https://images.unsplash.com/photo-1512100356356-de1b84283e18?q=80&w=1975&auto=format&fit=crop",
+      alt: "Bali Rice Terrace",
+      caption: t("gallery.items.bali.caption"),
+      location: "Ubud, Bali",
+    },
+    {
+      id: 3,
+      src: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=1938&auto=format&fit=crop",
+      alt: "Pura Ulundanu",
+      caption: t("gallery.items.ulundanu.caption"),
+      location: "Pura Ulundanu",
+    },
+    {
+      id: 4,
+      src: LabuanBajo,
+      alt: "Komodo Island",
+      caption: t("gallery.items.bajo.caption"),
+      location: "Labuan Bajo",
+    },
+    {
+      id: 5,
+      src: MtBromo,
+      alt: "Bromo Sunrise",
+      caption: t("gallery.items.bromo.caption"),
+      location: "Mt. Bromo",
+    },
+    {
+      id: 6,
+      src: GiliTrawangan,
+      alt: "Beach Sunset",
+      caption: t("gallery.items.gili.caption"),
+      location: "Gili Trawangan",
+    },
+  ];
+
   return (
     <section
       id="gallery"
@@ -81,11 +84,13 @@ export default function Gallery() {
           </div>
 
           <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight mb-6">
-            Captured <span className="text-emerald-600 italic">Moments</span>
+            {t("gallery.heading_start")}{" "}
+            <span className="text-emerald-600 italic">
+              {t("gallery.heading_highlight")}
+            </span>
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-lg">
-            No filters needed. Just pure, unadulterated nature rendering at
-            infinite FPS. See what our travelers are experiencing.
+            {t("gallery.subtitle")}
           </p>
         </div>
 
@@ -118,11 +123,12 @@ export default function Gallery() {
           ))}
         </div>
 
-        {/* Bottom CTA */}
         <div className="mt-16 text-center">
-          <p className="text-slate-500 mb-4 font-medium">Want to see more?</p>
-          <button className="px-8 py-3 bg-white border-2 border-slate-200 text-slate-900 font-bold rounded-full hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all shadow-sm">
-            Follow us on Instagram
+          <p className="text-slate-500 mb-4 font-medium">
+            {t("gallery.cta_question")}
+          </p>
+          <button className="px-8 py-3 bg-white border-2 border-slate-200 text-slate-900 font-bold rounded-full hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all shadow-sm cursor-pointer">
+            {t("gallery.cta_button")}
           </button>
         </div>
       </div>
