@@ -89,4 +89,4 @@ Pastikan komputer Anda telah terinstal **Bun** (atau Node.js).
 
 ---
 
-_Dibuat oleh [M. Faridh Maulana/452024611065, Suryatama Widyadhana/452024611061, Muhammad Wildan/452024611014] - Program Studi Teknik Informatika, Universitas Darussalam Gontor._
+_Dibuat oleh **M. Faridh Maulana/452024611065, Suryatama Widyadhana/452024611061, Muhammad Wildan/452024611014** - Program Studi Teknik Informatika, Universitas Darussalam Gontor._
