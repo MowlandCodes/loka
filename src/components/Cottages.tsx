@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next"; // <--- Jangan lupa import ini
+import { useTranslation } from "react-i18next";
 import { LuStar, LuCoffee, LuWind, LuArrowUpRight } from "react-icons/lu";
 import BambooHavenLodge from "@/assets/images/bamboo-haven-lodge.webp";
 import VillaBromo from "@/assets/images/villa-bromo.webp";
