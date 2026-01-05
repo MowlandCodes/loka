@@ -96,6 +96,12 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+        <button
+          onClick={toggleLanguage}
+          className="flex items-center gap-2 py-1 px-3 border border-white/20 rounded-full text-xs font-bold text-white hover:border-emerald-500 hover:text-emerald-400 transition-all uppercase mb-4 mx-4"
+        >
+          <span>{i18n.language === "en" ? "EN" : "ID"}</span>
+        </button>
       </div>
     </nav>
   );
