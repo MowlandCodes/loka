@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Destinations from "@/components/Destinations";
 import Cottages from "@/components/Cottages";
+import Gallery from "./Gallery";
 
 export default function Root() {
   return (
@@ -10,6 +11,7 @@ export default function Root() {
       <Hero />
       <Destinations />
       <Cottages />
+      <Gallery />
     </main>
   );
 }
